@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/tetris/">
+    <file alias="Main.qml">C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml</file>
+  </qresource>
+</RCC>
+

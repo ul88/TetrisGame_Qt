@@ -1,0 +1,62 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "TetrisMap",
+            "lineNumber": 8,
+            "object": true,
+            "qualifiedClassName": "TetrisMap",
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "event",
+                            "type": "QKeyEvent*"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "keyPressEvent",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "blocks",
+                            "type": "Blocks*"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "addBlockPos",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "deleteLine",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "downBlock",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "TetrisMap.h",
+    "outputRevision": 68
+}

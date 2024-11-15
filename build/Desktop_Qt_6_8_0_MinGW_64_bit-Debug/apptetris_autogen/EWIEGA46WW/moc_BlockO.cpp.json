@@ -1,0 +1,24 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "BlockO",
+            "lineNumber": 7,
+            "object": true,
+            "qualifiedClassName": "BlockO",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "BlockO.h",
+    "outputRevision": 68
+}

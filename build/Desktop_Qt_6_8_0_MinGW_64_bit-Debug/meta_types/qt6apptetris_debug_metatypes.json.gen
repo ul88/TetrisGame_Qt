@@ -1,0 +1,243 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "Block",
+                "lineNumber": 6,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "read": "color",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "write": "setColor"
+                    }
+                ],
+                "qualifiedClassName": "Block",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "blockTypeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Block.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "Blocks",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "Block_Type",
+                        "values": [
+                            "BLOCK_TYPE_I",
+                            "BLOCK_TYPE_L",
+                            "BLOCK_TYPE_J",
+                            "BLOCK_TYPE_O",
+                            "BLOCK_TYPE_Z",
+                            "BLOCK_TYPE_S",
+                            "BLOCK_TYPE_T"
+                        ]
+                    }
+                ],
+                "lineNumber": 8,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "read": "color",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "write": "setColor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "blockType",
+                        "notify": "blockTypeChanged",
+                        "read": "blockType",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Block_Type",
+                        "user": false,
+                        "write": "setBlockType"
+                    }
+                ],
+                "qualifiedClassName": "Blocks",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "blockTypeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "direction",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "moveY",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "direction",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "moveX",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "direction",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "spin",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "Blocks.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "TetrisMap",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "TetrisMap",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "event",
+                                "type": "QKeyEvent*"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "keyPressEvent",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "blocks",
+                                "type": "Blocks*"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "addBlockPos",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "deleteLine",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "name": "downBlock",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TetrisMap.h",
+        "outputRevision": 68
+    }
+]
