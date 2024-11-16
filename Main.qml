@@ -9,6 +9,14 @@ Window {
 
     TetrisMap{
         id: tetrisMap;
+
+        Component.onCompleted:{
+            blocksModel.append({})
+        }
+
+        onDownChanged:{
+            blocksModel.append({})
+        }
     }
 
     Grid {
@@ -33,20 +41,61 @@ Window {
         }
     }
 
-    Button{
-        id: button
-        width: 50
-        height: 50
+    ListModel{
+        id: blocksModel
+    }
 
-        onClicked: {
-            console.log("click");
-            blocksModel.append({})
+    Item{
+        x:60
+        y:50
+        Rectangle{
+            width:130
+            height:75
+            border.width: 3
+            color:"gray"
+        }
+        Blocks{
+            x:-60
+            y: 10
+            z: 1
+            blockType: tetrisMap.hold
+
+            Component.onCompleted:{
+                if(tetrisMap.typeList[index] != Blocks.BLOCK_TYPE_I &&
+                        tetrisMap.typeList[index] != Blocks.BLOCK_TYPE_O){
+                    x = -45
+                }
+            }
         }
     }
 
 
-    ListModel{
-        id: blocksModel
+    Repeater{
+        model: 5
+        Item{
+            x: 490
+            y: 130 + index*100
+            Rectangle{
+                width:130
+                height:100
+                color:"gray"
+            }
+            Blocks{
+                x: -60
+                y: 10
+                blockType: tetrisMap.typeList[index]
+                z:1
+
+                Component.onCompleted:{
+                    if(tetrisMap.typeList[index] != Blocks.BLOCK_TYPE_I &&
+                            tetrisMap.typeList[index] != Blocks.BLOCK_TYPE_O){
+                        x = -45
+                    }
+                }
+            }
+
+        }
+
     }
 
     Repeater{
@@ -55,9 +104,10 @@ Window {
         Blocks{
             x:grid.x
             y:grid.y
-            blockType: Blocks.BLOCK_TYPE_L
+            blockType: tetrisMap.down
 
             Component.onCompleted:{
+                blockType = tetrisMap.down
                 console.log("tetrisMap focus: ",tetrisMap.focus);
                 tetrisMap.forceActiveFocus();
                 tetrisMap.addBlockPos(this);

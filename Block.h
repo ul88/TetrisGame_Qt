@@ -19,10 +19,8 @@ public slots:
 
 signals:
     void colorChanged();
-    void blockTypeChanged();
 private:
     QColor m_color;
-    QString m_blockType;
 };
 
 #endif // BLOCK_H

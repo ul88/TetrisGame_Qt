@@ -12,6 +12,7 @@ public:
 
     static bool isCollision(QList<Block*> pos);
     static bool isWallCollision(Blocks* blocks);
+    static bool isWallCollision(Block* block);
 };
 
 #endif // BLOCKCOLLISION_H

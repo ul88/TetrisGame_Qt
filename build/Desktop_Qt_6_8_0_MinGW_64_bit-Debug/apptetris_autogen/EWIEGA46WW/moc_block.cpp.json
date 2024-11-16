@@ -34,12 +34,6 @@
                     "index": 0,
                     "name": "colorChanged",
                     "returnType": "void"
-                },
-                {
-                    "access": "public",
-                    "index": 1,
-                    "name": "blockTypeChanged",
-                    "returnType": "void"
                 }
             ],
             "superClasses": [

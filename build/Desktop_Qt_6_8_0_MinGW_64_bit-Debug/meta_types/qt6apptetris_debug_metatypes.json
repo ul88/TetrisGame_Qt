@@ -35,12 +35,6 @@
                         "index": 0,
                         "name": "colorChanged",
                         "returnType": "void"
-                    },
-                    {
-                        "access": "public",
-                        "index": 1,
-                        "name": "blockTypeChanged",
-                        "returnType": "void"
                     }
                 ],
                 "superClasses": [
@@ -76,7 +70,8 @@
                             "BLOCK_TYPE_O",
                             "BLOCK_TYPE_Z",
                             "BLOCK_TYPE_S",
-                            "BLOCK_TYPE_T"
+                            "BLOCK_TYPE_T",
+                            "BLOCK_NONE"
                         ]
                     }
                 ],
@@ -188,9 +183,75 @@
                     }
                 ],
                 "className": "TetrisMap",
-                "lineNumber": 8,
+                "lineNumber": 9,
                 "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "down",
+                        "notify": "downChanged",
+                        "read": "down",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Blocks::Block_Type",
+                        "user": false,
+                        "write": "setDown"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "hold",
+                        "notify": "holdChanged",
+                        "read": "hold",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Blocks::Block_Type",
+                        "user": false,
+                        "write": "setHold"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "typeList",
+                        "notify": "typeListChanged",
+                        "read": "typeList",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<Blocks::Block_Type>",
+                        "user": false
+                    }
+                ],
                 "qualifiedClassName": "TetrisMap",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "downChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "holdChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "typeListChanged",
+                        "returnType": "void"
+                    }
+                ],
                 "slots": [
                     {
                         "access": "public",
@@ -200,7 +261,7 @@
                                 "type": "QKeyEvent*"
                             }
                         ],
-                        "index": 0,
+                        "index": 3,
                         "name": "keyPressEvent",
                         "returnType": "void"
                     },
@@ -212,19 +273,19 @@
                                 "type": "Blocks*"
                             }
                         ],
-                        "index": 1,
+                        "index": 4,
                         "name": "addBlockPos",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 2,
+                        "index": 5,
                         "name": "deleteLine",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
-                        "index": 3,
+                        "index": 6,
                         "name": "downBlock",
                         "returnType": "void"
                     }

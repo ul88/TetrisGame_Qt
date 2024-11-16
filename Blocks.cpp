@@ -77,7 +77,6 @@ void Blocks::spin(int direction){
         for(auto iter : m_blocks){
             qreal tempX = (iter->y() - centerY) + centerX, tempY = -(iter->x() - centerX) + centerY;
 
-
             iter->setX(tempX);
             iter->setY(tempY);
             qDebug()<<iter;

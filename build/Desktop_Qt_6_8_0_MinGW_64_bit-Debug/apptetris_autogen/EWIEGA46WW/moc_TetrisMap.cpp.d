@@ -2,6 +2,7 @@ C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_6
   C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/apptetris_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QList \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/QQueue \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QRect \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QSize \
   C:/Qt/6.8.0/mingw_64/include/QtCore/QSizeF \
@@ -89,6 +90,7 @@ C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_6
   C:/Qt/6.8.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qproperty.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qpropertyprivate.h \
+  C:/Qt/6.8.0/mingw_64/include/QtCore/qqueue.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qrefcount.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/qscopedpointer.h \

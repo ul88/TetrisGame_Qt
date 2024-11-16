@@ -22,7 +22,8 @@ public:
         BLOCK_TYPE_O,
         BLOCK_TYPE_Z,
         BLOCK_TYPE_S,
-        BLOCK_TYPE_T
+        BLOCK_TYPE_T,
+        BLOCK_NONE,
     };
     Q_ENUM(Block_Type)
 

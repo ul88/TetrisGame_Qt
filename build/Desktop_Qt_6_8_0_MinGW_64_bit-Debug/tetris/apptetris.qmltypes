@@ -23,7 +23,6 @@ Module {
             isFinal: true
         }
         Signal { name: "colorChanged" }
-        Signal { name: "blockTypeChanged" }
     }
     Component {
         file: "Blocks.h"
@@ -41,7 +40,8 @@ Module {
                 "BLOCK_TYPE_O",
                 "BLOCK_TYPE_Z",
                 "BLOCK_TYPE_S",
-                "BLOCK_TYPE_T"
+                "BLOCK_TYPE_T",
+                "BLOCK_NONE"
             ]
         }
         Property {
@@ -86,6 +86,37 @@ Module {
         prototype: "QQuickItem"
         exports: ["tetris/TetrisMap 1.0"]
         exportMetaObjectRevisions: [256]
+        Property {
+            name: "down"
+            type: "Blocks::Block_Type"
+            read: "down"
+            write: "setDown"
+            notify: "downChanged"
+            index: 0
+            isFinal: true
+        }
+        Property {
+            name: "hold"
+            type: "Blocks::Block_Type"
+            read: "hold"
+            write: "setHold"
+            notify: "holdChanged"
+            index: 1
+            isFinal: true
+        }
+        Property {
+            name: "typeList"
+            type: "Blocks::Block_Type"
+            isList: true
+            read: "typeList"
+            notify: "typeListChanged"
+            index: 2
+            isReadonly: true
+            isFinal: true
+        }
+        Signal { name: "downChanged" }
+        Signal { name: "holdChanged" }
+        Signal { name: "typeListChanged" }
         Method {
             name: "keyPressEvent"
             Parameter { name: "event"; type: "QKeyEvent"; isPointer: true }

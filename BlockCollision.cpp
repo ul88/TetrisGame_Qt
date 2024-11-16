@@ -18,6 +18,14 @@ bool BlockCollision::isWallCollision(Blocks* blocks){
         if(now->x() < 0 || now->x() > blocks->gridX.second ||
             now->y() < 0 || now->y() > blocks->gridY.second) return true;
     }
+    return false;
+}
+
+bool BlockCollision::isWallCollision(Block* block){
+
+    Block* now = block;
+    if(now->x() < 0 || now->x() > 25*9 ||
+        now->y() < 0 || now->y() > 25*19) return true;
 
     return false;
 }

@@ -5,19 +5,67 @@
                 "entries": [
                     {
                         "codegenSuccessfull": false,
-                        "column": 20,
-                        "durationMicroseconds": 2,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 41
+                        "column": 23,
+                        "durationMicroseconds": 502,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onDownChanged",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 31,
+                        "durationMicroseconds": 181,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onCompleted",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
+                        "durationMicroseconds": 16,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: tetrisMap",
+                        "functionName": "blockType",
+                        "line": 61
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 35,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: tetrisMap",
+                        "functionName": "onCompleted",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 16,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "y",
+                        "line": 77
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot access value for name tetrisMap",
+                        "functionName": "blockType",
+                        "line": 86
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "Cannot access value for name tetrisMap",
+                        "functionName": "onCompleted",
+                        "line": 89
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 347,
+                        "durationMicroseconds": 123,
                         "errorMessage": "",
                         "functionName": "model",
-                        "line": 53
+                        "line": 102
                     },
                     {
                         "codegenSuccessfull": false,
@@ -25,7 +73,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on x.",
                         "functionName": "x",
-                        "line": 56
+                        "line": 105
                     },
                     {
                         "codegenSuccessfull": false,
@@ -33,23 +81,23 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on y.",
                         "functionName": "y",
-                        "line": 57
+                        "line": 106
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 154,
-                        "errorMessage": "",
+                        "durationMicroseconds": 15,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: tetrisMap",
                         "functionName": "blockType",
-                        "line": 58
+                        "line": 107
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot retrieve a non-object type by ID: tetrisMap",
                         "functionName": "onCompleted",
-                        "line": 60
+                        "line": 109
                     }
                 ],
                 "filepath": "C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Main.qml"
