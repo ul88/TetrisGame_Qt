@@ -12,20 +12,27 @@ bool BlockCollision::isCollision(QList<Block*> pos){
     return false;
 }
 
-bool BlockCollision::isWallCollision(Blocks* blocks){
+bool BlockCollision::isWallCollision(Blocks* blocks, QPair<qreal, qreal> gridPos){
     for(int i=0;i<4;i++){
         Block* now = blocks->m_blocks[i];
-        if(now->x() < 0 || now->x() > blocks->gridX.second ||
-            now->y() < 0 || now->y() > blocks->gridY.second) return true;
+        if(now->x() < 0 || now->x() > gridPos.first ||
+            now->y() < 0 || now->y() > gridPos.second) return true;
     }
     return false;
 }
 
-bool BlockCollision::isWallCollision(Block* block){
+bool BlockCollision::isWallCollision(Block* block, QPair<qreal, qreal> gridPos){
 
     Block* now = block;
-    if(now->x() < 0 || now->x() > 25*9 ||
-        now->y() < 0 || now->y() > 25*19) return true;
+    if(now->x() < 0 || now->x() > gridPos.first ||
+        now->y() < 0 || now->y() > gridPos.second) return true;
 
+    return false;
+}
+
+bool BlockCollision::isEndLine(QList<Block*> pos){
+    for(auto iter : pos){
+        if(iter->y() < 0) return true;
+    }
     return false;
 }

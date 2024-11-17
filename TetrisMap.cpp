@@ -9,6 +9,8 @@
 TetrisMap::TetrisMap(QQuickItem* parent)
     : QQuickItem(parent)
 {
+    m_gridPos = {25*9, 25*19};
+
     setHold(Blocks::BLOCK_NONE);
     isHold = true;
     addTypeList();
@@ -63,6 +65,15 @@ void TetrisMap::addBlockPos(Blocks* blocks){
     }
 }
 
+void TetrisMap::wallKick(int direction){
+    switch(direction){
+    case 0:
+        break;
+    case 1:
+        break;
+    }
+}
+
 void TetrisMap::keyPressEvent(QKeyEvent* event){
     if(m_now == nullptr) return;
     QList<Block*> temp;
@@ -71,35 +82,35 @@ void TetrisMap::keyPressEvent(QKeyEvent* event){
     case Qt::Key_Left:
         qDebug()<<"move left";
         m_now->moveX(0);
-        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now)){
+        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now, m_gridPos)){
             m_now->moveX(1);
         }
         break;
     case Qt::Key_Right:
         qDebug()<<"move right";
         m_now->moveX(1);
-        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now)){
+        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now, m_gridPos)){
             m_now->moveX(0);
         }
         break;
     case Qt::Key_Down:
         qDebug()<<"move down";
         m_now->moveY(1);
-        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now)){
+        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now, m_gridPos)){
             m_now->moveY(0);
         }
         break;
     case Qt::Key_Z:
         qDebug()<<"left spin";
         m_now->spin(0);
-        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now)){
+        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now, m_gridPos)){
             m_now->spin(1);
         }
         break;
     case Qt::Key_X:
         qDebug()<<"right spin";
         m_now->spin(1);
-        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now)){
+        if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now, m_gridPos)){
             m_now->spin(0);
         }
         break;
@@ -137,7 +148,7 @@ void TetrisMap::keyPressEvent(QKeyEvent* event){
         break;
     case Qt::Key_Space:
         qDebug()<<"hard drap";
-        while(!BlockCollision::isCollision(m_pos) && !BlockCollision::isWallCollision(m_now)){
+        while(!BlockCollision::isCollision(m_pos) && !BlockCollision::isWallCollision(m_now, m_gridPos)){
             m_now->moveY(1);
         }
         m_now->moveY(0);
@@ -148,6 +159,7 @@ void TetrisMap::keyPressEvent(QKeyEvent* event){
         setDown(m_typeList.front());
         m_typeList.pop_front();
         emit typeListChanged();
+        if(BlockCollision::isEndLine(m_pos)) gameOver();
         timer->start(1000);
         break;
     }
@@ -157,7 +169,7 @@ void TetrisMap::keyPressEvent(QKeyEvent* event){
 void TetrisMap::downBlock(){
     if(m_now == nullptr) return;
     m_now->moveY(1);
-    if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now)){
+    if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(m_now, m_gridPos)){
         m_now->moveY(0);
         m_now = nullptr;
         deleteLine();
@@ -166,6 +178,7 @@ void TetrisMap::downBlock(){
         setDown(m_typeList.front());
         m_typeList.pop_front();
         emit typeListChanged();
+        if(BlockCollision::isEndLine(m_pos)) gameOver();
     }
 }
 
@@ -200,7 +213,7 @@ void TetrisMap::deleteLine(){
             for(auto iter : line[i]){
                 for(int j=0;j<cnt/10;j++){
                     iter->setY(iter->y()+25);
-                    if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(iter)){
+                    if(BlockCollision::isCollision(m_pos) || BlockCollision::isWallCollision(iter, m_gridPos)){
                         iter->setY(iter->y()-25);
                         break;
                     }
@@ -209,4 +222,10 @@ void TetrisMap::deleteLine(){
         }
 
     }
+}
+
+void TetrisMap::gameOver(){
+    qDebug()<<"game over";
+    timer->stop();
+    setFocus(false);
 }

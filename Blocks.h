@@ -61,8 +61,6 @@ private:
     QColor m_color;
     Block_Type m_blockType;
     QList<Block*> m_blocks;
-    QPair<qreal, qreal> gridX;
-    QPair<qreal, qreal> gridY;
 };
 
 #endif // BLOCKS_H

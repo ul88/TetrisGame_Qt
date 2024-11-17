@@ -21,6 +21,7 @@ qt_add_qml_module(apptetris
         SOURCES Blocks.h Blocks.cpp
         SOURCES TetrisMap.h TetrisMap.cpp
         SOURCES BlockCollision.h BlockCollision.cpp
+        QML_FILES TetrisObject.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

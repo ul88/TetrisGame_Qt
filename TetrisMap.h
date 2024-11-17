@@ -25,6 +25,14 @@ public:
     QList<Blocks::Block_Type> typeList() const {return m_typeList;}
 
     void addTypeList();
+
+    void wallKick(int direction);
+    /*
+        direction   0: 왼쪽
+                    1: 오른쪽
+    */
+
+    void gameOver();
 public slots:
     void keyPressEvent(QKeyEvent* event) override;
     void addBlockPos(Blocks* blocks);
@@ -42,6 +50,7 @@ private:
     QTimer* timer;
     Blocks::Block_Type m_hold;
     bool isHold;
+    QPair<qreal, qreal> m_gridPos; //first: x의 끝 좌표, second: y의 끝 좌표
 };
 
 #endif // TETRISMAP_H

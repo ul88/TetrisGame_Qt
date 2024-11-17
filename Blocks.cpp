@@ -8,8 +8,6 @@ Blocks::Blocks(QQuickItem* parent)
     m_color(color()),
     m_blockType(blockType())
 {
-    gridX = {0, 25*9};
-    gridY = {0, 25*19};
     for(int i=0;i<4;i++){
         QPointer<Block> block = new Block(this);
         block->setColor(m_color);
@@ -72,6 +70,10 @@ void Blocks::moveY(int direction){
 void Blocks::spin(int direction){
     qreal centerX=m_blocks[1]->x(), centerY=m_blocks[1]->y();
 
+    if(m_blockType == BLOCK_TYPE_O){
+        return;
+    }
+
     switch(direction){
     case 0:
         for(auto iter : m_blocks){
@@ -101,13 +103,13 @@ void Blocks::changeBlock(){
     case BLOCK_TYPE_I:
         //x
         m_blocks[0]->setX(0);
-        m_blocks[1]->setX(25);
-        m_blocks[2]->setX(50);
+        m_blocks[2]->setX(25);
+        m_blocks[1]->setX(50);
         m_blocks[3]->setX(75);
         //y
         m_blocks[0]->setY(0);
-        m_blocks[1]->setY(0);
         m_blocks[2]->setY(0);
+        m_blocks[1]->setY(0);
         m_blocks[3]->setY(0);
 
         setColor("aqua");
@@ -115,13 +117,13 @@ void Blocks::changeBlock(){
     case BLOCK_TYPE_J:
         //x
         m_blocks[0]->setX(0);
-        m_blocks[1]->setX(0);
-        m_blocks[2]->setX(25);
+        m_blocks[2]->setX(0);
+        m_blocks[1]->setX(25);
         m_blocks[3]->setX(50);
         //y
         m_blocks[0]->setY(0);
-        m_blocks[1]->setY(25);
         m_blocks[2]->setY(25);
+        m_blocks[1]->setY(25);
         m_blocks[3]->setY(25);
 
         setColor("blue");
@@ -143,10 +145,10 @@ void Blocks::changeBlock(){
         break;
     case BLOCK_TYPE_O:
         //x
-        m_blocks[0]->setX(25);
-        m_blocks[1]->setX(25);
-        m_blocks[2]->setX(50);
-        m_blocks[3]->setX(50);
+        m_blocks[0]->setX(0);
+        m_blocks[1]->setX(0);
+        m_blocks[2]->setX(25);
+        m_blocks[3]->setX(25);
 
         //y
         m_blocks[0]->setY(0);
@@ -189,14 +191,14 @@ void Blocks::changeBlock(){
     case BLOCK_TYPE_Z:
         //x
         m_blocks[0]->setX(0);
-        m_blocks[1]->setX(25);
         m_blocks[2]->setX(25);
+        m_blocks[1]->setX(25);
         m_blocks[3]->setX(50);
 
         //y
         m_blocks[0]->setY(0);
-        m_blocks[1]->setY(0);
-        m_blocks[2]->setY(25);
+        m_blocks[2]->setY(0);
+        m_blocks[1]->setY(25);
         m_blocks[3]->setY(25);
 
         setColor("red");
@@ -205,7 +207,9 @@ void Blocks::changeBlock(){
         break;
     }
 
+    int moveCnt = 3;
+    if(m_blockType == BLOCK_TYPE_O) moveCnt++;
     for(int i=0;i<4;i++){
-        m_blocks[i]->setX(m_blocks[i]->x()+25*3);
+        m_blocks[i]->setX(m_blocks[i]->x()+25*moveCnt);
     }
 }

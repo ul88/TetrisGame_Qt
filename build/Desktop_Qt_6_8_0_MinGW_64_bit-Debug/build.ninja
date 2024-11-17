@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/D
 #############################################
 # Order-only phony target for apptetris
 
-build cmake_object_order_depends_target_apptetris: phony || .qt/rcc/qrc_apptetris_raw_qml_0.cpp .qt/rcc/qrc_qmake_tetris.cpp .rcc/qmlcache/apptetris_Main_qml.cpp .rcc/qmlcache/apptetris_Main_qml.cpp.aotstats .rcc/qmlcache/apptetris_qmlcache_loader.cpp apptetris_autogen apptetris_autogen/mocs_compilation.cpp apptetris_autogen/timestamp apptetris_autogen_timestamp_deps apptetris_qmlimportscan apptetris_qmltyperegistrations.cpp apptetris_tooling meta_types/apptetris_json_file_list.txt meta_types/apptetris_json_file_list.txt.timestamp meta_types/qt6apptetris_debug_metatypes.json meta_types/qt6apptetris_debug_metatypes.json.gen tetris/apptetris.qmltypes
+build cmake_object_order_depends_target_apptetris: phony || .qt/rcc/qrc_apptetris_raw_qml_0.cpp .qt/rcc/qrc_qmake_tetris.cpp .rcc/qmlcache/apptetris_Main_qml.cpp .rcc/qmlcache/apptetris_Main_qml.cpp.aotstats .rcc/qmlcache/apptetris_TetrisObject_qml.cpp .rcc/qmlcache/apptetris_TetrisObject_qml.cpp.aotstats .rcc/qmlcache/apptetris_qmlcache_loader.cpp apptetris_autogen apptetris_autogen/mocs_compilation.cpp apptetris_autogen/timestamp apptetris_autogen_timestamp_deps apptetris_qmlimportscan apptetris_qmltyperegistrations.cpp apptetris_tooling meta_types/apptetris_json_file_list.txt meta_types/apptetris_json_file_list.txt.timestamp meta_types/qt6apptetris_debug_metatypes.json meta_types/qt6apptetris_debug_metatypes.json.gen tetris/apptetris.qmltypes
 
 build CMakeFiles/apptetris.dir/apptetris_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__apptetris_unscanned_Debug C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/apptetris_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_apptetris
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -129,6 +129,14 @@ build CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qm
   OBJECT_DIR = CMakeFiles\apptetris.dir
   OBJECT_FILE_DIR = CMakeFiles\apptetris.dir\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.rcc\qmlcache
 
+build CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_TetrisObject_qml.cpp.obj: CXX_COMPILER__apptetris_unscanned_Debug C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_TetrisObject_qml.cpp || cmake_object_order_depends_target_apptetris
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\apptetris.dir\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.rcc\qmlcache\apptetris_TetrisObject_qml.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/apptetris_autogen/include -IC:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris -isystem C:/Qt/6.8.0/mingw_64/include/QtQml/6.8.0 -isystem C:/Qt/6.8.0/mingw_64/include/QtQml/6.8.0/QtQml -isystem C:/Qt/6.8.0/mingw_64/include/QtCore/6.8.0 -isystem C:/Qt/6.8.0/mingw_64/include/QtCore/6.8.0/QtCore -isystem C:/Qt/6.8.0/mingw_64/include/QtCore -isystem C:/Qt/6.8.0/mingw_64/include -isystem C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.8.0/mingw_64/include/QtQml -isystem C:/Qt/6.8.0/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.8.0/mingw_64/include/QtNetwork -isystem C:/Qt/6.8.0/mingw_64/include/QtQuick -isystem C:/Qt/6.8.0/mingw_64/include/QtGui -isystem C:/Qt/6.8.0/mingw_64/include/QtQmlMeta -isystem C:/Qt/6.8.0/mingw_64/include/QtQmlModels -isystem C:/Qt/6.8.0/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt/6.8.0/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\apptetris.dir
+  OBJECT_FILE_DIR = CMakeFiles\apptetris.dir\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.rcc\qmlcache
+
 build CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apptetris_raw_qml_0.cpp.obj: CXX_COMPILER__apptetris_unscanned_Debug C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apptetris_raw_qml_0.cpp || cmake_object_order_depends_target_apptetris
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\apptetris.dir\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.qt\rcc\qrc_apptetris_raw_qml_0.cpp.obj.d
@@ -145,7 +153,7 @@ build CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc
 #############################################
 # Link the executable apptetris.exe
 
-build apptetris.exe: CXX_EXECUTABLE_LINKER__apptetris_Debug CMakeFiles/apptetris.dir/apptetris_autogen/mocs_compilation.cpp.obj CMakeFiles/apptetris.dir/main.cpp.obj CMakeFiles/apptetris.dir/apptetris_qmltyperegistrations.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_tetris.cpp.obj CMakeFiles/apptetris.dir/Block.cpp.obj CMakeFiles/apptetris.dir/Blocks.cpp.obj CMakeFiles/apptetris.dir/TetrisMap.cpp.obj CMakeFiles/apptetris.dir/BlockCollision.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_qmlcache_loader.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_Main_qml.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apptetris_raw_qml_0.cpp.obj | C$:/Qt/6.8.0/mingw_64/lib/libQt6Quick.a C$:/Qt/6.8.0/mingw_64/lib/libQt6QmlMeta.a C$:/Qt/6.8.0/mingw_64/lib/libQt6QmlWorkerScript.a C$:/Qt/6.8.0/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Qml.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Network.a C$:/Qt/6.8.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a || apptetris_autogen apptetris_autogen_timestamp_deps apptetris_qmlimportscan apptetris_tooling
+build apptetris.exe: CXX_EXECUTABLE_LINKER__apptetris_Debug CMakeFiles/apptetris.dir/apptetris_autogen/mocs_compilation.cpp.obj CMakeFiles/apptetris.dir/main.cpp.obj CMakeFiles/apptetris.dir/apptetris_qmltyperegistrations.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_tetris.cpp.obj CMakeFiles/apptetris.dir/Block.cpp.obj CMakeFiles/apptetris.dir/Blocks.cpp.obj CMakeFiles/apptetris.dir/TetrisMap.cpp.obj CMakeFiles/apptetris.dir/BlockCollision.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_qmlcache_loader.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_Main_qml.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_TetrisObject_qml.cpp.obj CMakeFiles/apptetris.dir/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apptetris_raw_qml_0.cpp.obj | C$:/Qt/6.8.0/mingw_64/lib/libQt6Quick.a C$:/Qt/6.8.0/mingw_64/lib/libQt6QmlMeta.a C$:/Qt/6.8.0/mingw_64/lib/libQt6QmlWorkerScript.a C$:/Qt/6.8.0/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Qml.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Network.a C$:/Qt/6.8.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a || apptetris_autogen apptetris_autogen_timestamp_deps apptetris_qmlimportscan apptetris_tooling
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.8.0/mingw_64/lib/libQt6Quick.a  C:/Qt/6.8.0/mingw_64/lib/libQt6QmlMeta.a  C:/Qt/6.8.0/mingw_64/lib/libQt6QmlWorkerScript.a  C:/Qt/6.8.0/mingw_64/lib/libQt6QmlModels.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Qml.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Qt/6.8.0/mingw_64/lib/libQt6OpenGL.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a  C:/Qt/6.8.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -luser32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -208,13 +216,13 @@ build all_qmllint_module: phony apptetris_qmllint_module
 #############################################
 # Utility command for module_apptetris_aotstats_targets
 
-build module_apptetris_aotstats_targets: phony CMakeFiles/module_apptetris_aotstats_targets .rcc/qmlcache/module_tetris.aotstats .rcc/qmlcache/apptetris_Main_qml.cpp .rcc/qmlcache/apptetris_Main_qml.cpp.aotstats apptetris_qmltyperegistrations.cpp tetris/apptetris.qmltypes apptetris_qmltyperegistration
+build module_apptetris_aotstats_targets: phony CMakeFiles/module_apptetris_aotstats_targets .rcc/qmlcache/module_tetris.aotstats .rcc/qmlcache/apptetris_Main_qml.cpp .rcc/qmlcache/apptetris_Main_qml.cpp.aotstats .rcc/qmlcache/apptetris_TetrisObject_qml.cpp .rcc/qmlcache/apptetris_TetrisObject_qml.cpp.aotstats apptetris_qmltyperegistrations.cpp tetris/apptetris.qmltypes apptetris_qmltyperegistration
 
 
 #############################################
 # Utility command for apptetris_tooling
 
-build apptetris_tooling: phony tetris/Main.qml
+build apptetris_tooling: phony tetris/Main.qml tetris/TetrisObject.qml
 
 
 #############################################
@@ -353,9 +361,18 @@ build .rcc/qmlcache/apptetris_Main_qml.cpp .rcc/qmlcache/apptetris_Main_qml.cpp.
 
 
 #############################################
+# Custom command for .rcc\qmlcache\apptetris_TetrisObject_qml.cpp
+
+build .rcc/qmlcache/apptetris_TetrisObject_qml.cpp .rcc/qmlcache/apptetris_TetrisObject_qml.cpp.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/apptetris_TetrisObject_qml.cpp ${cmake_ninja_workdir}.rcc/qmlcache/apptetris_TetrisObject_qml.cpp.aotstats: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmlcachegen.exe C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml .qt/rcc/qmake_tetris.qrc .qt/rcc/apptetris_raw_qml_0.qrc tetris/apptetris.qmltypes tetris/qmldir
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache && C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/tetris/TetrisObject.qml -I C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug -I C:/Qt/6.8.0/mingw_64/qml -i C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/tetris/qmldir --resource C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qmake_tetris.qrc --resource C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/apptetris_raw_qml_0.qrc --dump-aot-stats --module-id=tetris(apptetris) -o C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/apptetris_TetrisObject_qml.cpp C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml"
+  DESC = Generating .rcc/qmlcache/apptetris_TetrisObject_qml.cpp, .rcc/qmlcache/apptetris_TetrisObject_qml.cpp.aotstats
+  restat = 1
+
+
+#############################################
 # Custom command for .qt\rcc\qrc_apptetris_raw_qml_0.cpp
 
-build .qt/rcc/qrc_apptetris_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_apptetris_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml .qt/rcc/apptetris_raw_qml_0.qrc C$:/Qt/6.8.0/mingw_64/bin/rcc.exe || apptetris_autogen apptetris_autogen_timestamp_deps apptetris_qmlimportscan apptetris_tooling
+build .qt/rcc/qrc_apptetris_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_apptetris_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml .qt/rcc/apptetris_raw_qml_0.qrc C$:/Qt/6.8.0/mingw_64/bin/rcc.exe || apptetris_autogen apptetris_autogen_timestamp_deps apptetris_qmlimportscan apptetris_tooling
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug && C:\Qt\6.8.0\mingw_64\bin\rcc.exe --output C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qrc_apptetris_raw_qml_0.cpp --name apptetris_raw_qml_0 C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/apptetris_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource apptetris_raw_qml_0
   restat = 1
@@ -390,21 +407,21 @@ build CMakeFiles/apptetris_qmltyperegistration | ${cmake_ninja_workdir}CMakeFile
 #############################################
 # Custom command for CMakeFiles\apptetris_qmllint
 
-build CMakeFiles/apptetris_qmllint | ${cmake_ninja_workdir}CMakeFiles/apptetris_qmllint: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmllint.exe C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml .rcc/qmllint/apptetris.rsp || all_qmltyperegistrations apptetris_qmltyperegistration
+build CMakeFiles/apptetris_qmllint | ${cmake_ninja_workdir}CMakeFiles/apptetris_qmllint: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmllint.exe C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml .rcc/qmllint/apptetris.rsp || all_qmltyperegistrations apptetris_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris && C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.0/mingw_64/bin/qmllint.exe @C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmllint/apptetris.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\apptetris_qmllint_json
 
-build CMakeFiles/apptetris_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/apptetris_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmllint.exe C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml .rcc/qmllint/apptetris_json.rsp || all_qmltyperegistrations apptetris_qmltyperegistration
+build CMakeFiles/apptetris_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/apptetris_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmllint.exe C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml .rcc/qmllint/apptetris_json.rsp || all_qmltyperegistrations apptetris_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris && C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.0/mingw_64/bin/qmllint.exe @C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmllint/apptetris_json.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\apptetris_qmllint_module
 
-build CMakeFiles/apptetris_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/apptetris_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmllint.exe C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml .rcc/qmllint/apptetris_module.rsp || all_qmltyperegistrations apptetris_qmltyperegistration
+build CMakeFiles/apptetris_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/apptetris_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmllint.exe C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml .rcc/qmllint/apptetris_module.rsp || all_qmltyperegistrations apptetris_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris && C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.0/mingw_64/bin/qmllint.exe @C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmllint/apptetris_module.rsp"
 
 
@@ -417,7 +434,7 @@ build CMakeFiles/module_apptetris_aotstats_targets | ${cmake_ninja_workdir}CMake
 #############################################
 # Custom command for .rcc\qmlcache\module_tetris.aotstats
 
-build .rcc/qmlcache/module_tetris.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_tetris.aotstats: CUSTOM_COMMAND .rcc/qmlcache/apptetris_Main_qml.cpp.aotstats || apptetris_qmltyperegistration
+build .rcc/qmlcache/module_tetris.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_tetris.aotstats: CUSTOM_COMMAND .rcc/qmlcache/apptetris_Main_qml.cpp.aotstats .rcc/qmlcache/apptetris_TetrisObject_qml.cpp.aotstats || apptetris_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug && C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.0/mingw_64/bin/qmlaotstats.exe aggregate C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/module_tetris.aotstatslist C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.rcc/qmlcache/module_tetris.aotstats"
   DESC = Generating .rcc/qmlcache/module_tetris.aotstats
   restat = 1
@@ -429,6 +446,15 @@ build .rcc/qmlcache/module_tetris.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache
 build tetris/Main.qml | ${cmake_ninja_workdir}tetris/Main.qml: CUSTOM_COMMAND C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/tetris/Main.qml"
   DESC = Copying Main.qml to C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/tetris/Main.qml
+  restat = 1
+
+
+#############################################
+# Custom command for tetris\TetrisObject.qml
+
+build tetris/TetrisObject.qml | ${cmake_ninja_workdir}tetris/TetrisObject.qml: CUSTOM_COMMAND C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/tetris/TetrisObject.qml"
+  DESC = Copying TetrisObject.qml to C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/tetris/TetrisObject.qml
   restat = 1
 
 
@@ -457,7 +483,7 @@ build CMakeFiles/apptetris_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/appt
 #############################################
 # Custom command for .qt\qml_imports\apptetris_build.cmake
 
-build .qt/qml_imports/apptetris_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/apptetris_build.cmake: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_tetris.qrc .qt/rcc/apptetris_raw_qml_0.qrc C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml
+build .qt/qml_imports/apptetris_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/apptetris_build.cmake: CUSTOM_COMMAND C$:/Qt/6.8.0/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_tetris.qrc .qt/rcc/apptetris_raw_qml_0.qrc C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/Main.qml C$:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/TetrisObject.qml
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris && C:\Users\hkimo\OneDrive\Desktop\coding\QML\tetris\build\Desktop_Qt_6_8_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.0/mingw_64/bin/qmlimportscanner.exe @C:/Users/hkimo/OneDrive/Desktop/coding/QML/tetris/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/qml_imports/apptetris_build.rsp"
   DESC = Running qmlimportscanner for apptetris
   restat = 1
