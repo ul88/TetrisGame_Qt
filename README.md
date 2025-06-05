@@ -13,3 +13,8 @@ BackEnd : C++ <br></h3>
 <h3>right spin : x</h3>
 <h3>hard drop : space bar</h3>
 <h3>soft drop : ↓</h3>
+
+
+
+# TODO
+WallKick 구현을 비롯한 테트리스 회전 공식 적용 및 Server-Client 구조로 멀티 구현
